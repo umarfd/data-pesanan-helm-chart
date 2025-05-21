@@ -3,7 +3,7 @@ entries:
   app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-21T18:58:50.223576868+07:00"
+    created: "2025-05-21T20:32:32.590094801+07:00"
     description: A Helm chart for Kubernetes
     digest: 4aa62a37e8e80ef94b8682d8ff87870d1aa1be493709c3dbe950da54fdc6944e
     name: app
@@ -14,7 +14,17 @@ entries:
   pinus-landing:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-21T18:58:50.224111915+07:00"
+    created: "2025-05-21T20:32:32.591429434+07:00"
+    description: A Helm chart for Kubernetes
+    digest: 51525bb01928073c7a3be6daa04699b9665a17db91447ea5824ecc41e7ea45df
+    name: pinus-landing
+    type: application
+    urls:
+    - https://pinus-academy.github.io/helm-chart/pinus-landing-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-05-21T20:32:32.590783405+07:00"
     description: A Helm chart for Kubernetes
     digest: 3076c4628c31d691575994708eb20baf83596480479d004f8cb3e3940e452e05
     name: pinus-landing
@@ -22,4 +32,4 @@ entries:
     urls:
     - https://pinus-academy.github.io/helm-chart/pinus-landing-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-21T18:58:50.222335721+07:00"
+generated: "2025-05-21T20:32:32.588593424+07:00"
