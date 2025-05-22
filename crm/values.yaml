@@ -20,25 +20,6 @@ imagePullSecrets:
 nameOverride: ""
 fullnameOverride: ""
 
-database:
-  host: "postgres-postgresql.database.svc.cluster.local"
-  port: 5432
-  name: "mydatabase"
-  user: "postgres"
-  passwordSecret:
-    name: "postgres-postgresql"
-    key: "postgres-password"
-
-configMap:
-  enabled: true
-  data:
-    PORT: "3000"
-    DB_HOST: "postgres-postgresql.database.svc.cluster.local"
-    DB_PORT: "5432"
-    DB_NAME: "mydatabase"
-    DB_USER: "postgres"
-
-
 # This section builds out the service account more information can be found here: https://kubernetes.io/docs/concepts/security/service-accounts/
 serviceAccount:
   # Specifies whether a service account should be created
