@@ -131,3 +131,6 @@ tolerations: []
 affinity: {}
 
 secret: {}
+
+job:
+  enabled: false
