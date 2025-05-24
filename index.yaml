@@ -11,36 +11,4 @@ entries:
     urls:
     - https://pinus-academy.github.io/helm-chart/app-0.1.0.tgz
     version: 0.1.0
-  crm:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-22T19:33:44.477210701+07:00"
-    description: A Helm chart for Kubernetes
-    digest: 4eca714773b53e3cb7f5fb3993c1ef5d6a89b38e65017c1e791cc67540b3ce4f
-    name: crm
-    type: application
-    urls:
-    - https://pinus-academy.github.io/helm-chart/crm-0.1.0.tgz
-    version: 0.1.0
-  pinus-landing:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-22T19:33:44.482892186+07:00"
-    description: A Helm chart for Kubernetes
-    digest: 51525bb01928073c7a3be6daa04699b9665a17db91447ea5824ecc41e7ea45df
-    name: pinus-landing
-    type: application
-    urls:
-    - https://pinus-academy.github.io/helm-chart/pinus-landing-0.1.1.tgz
-    version: 0.1.1
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-22T19:33:44.480411722+07:00"
-    description: A Helm chart for Kubernetes
-    digest: 3076c4628c31d691575994708eb20baf83596480479d004f8cb3e3940e452e05
-    name: pinus-landing
-    type: application
-    urls:
-    - https://pinus-academy.github.io/helm-chart/pinus-landing-0.1.0.tgz
-    version: 0.1.0
 generated: "2025-05-22T19:33:44.46694293+07:00"
