@@ -12,14 +12,15 @@ spec:
     matchLabels:
       {{- include "helm-crm.selectorLabels" . | nindent 6 }}
   template:
-    metadata:
-      annotations:
-        rollme: "{{ randAlphaNum 5 | quote }}"
+    metadata:      
+      annotations:              
+        rollme: {{ randAlphaNum 5 | quote }}
       labels:
         {{- include "helm-crm.labels" . | nindent 8 }}
         {{- with .Values.podLabels }}
         {{- toYaml . | nindent 8 }}
         {{- end }}
+
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
