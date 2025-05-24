@@ -3,9 +3,9 @@ entries:
   app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-22T19:33:44.474485278+07:00"
+    created: "2025-05-24T10:18:59.686211+07:00"
     description: A Helm chart for Kubernetes
-    digest: 4aa62a37e8e80ef94b8682d8ff87870d1aa1be493709c3dbe950da54fdc6944e
+    digest: 72beb9b67e71cf08aa0f7bc16ca9a9b2f3fdcbd8009e7753972f932242a6a6a9
     name: app
     type: application
     urls:
