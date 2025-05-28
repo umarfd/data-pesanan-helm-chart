@@ -132,5 +132,5 @@ affinity: {}
 
 secret: {}
 
-job:
+migrate:
   enabled: false
