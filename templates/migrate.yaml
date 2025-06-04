@@ -10,15 +10,13 @@ spec:
     spec:
       containers:
       - name: init
-        image: "{{ .Values.job.image.repository }}:{{ .Values.job.image.tag }}"
-        imagePullPolicy: {{ .Values.job.image.pullPolicy | default "IfNotPresent" }}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
         command: ["/bin/sh", "-c", "npm run prisma:migrate && npm run prisma:seed"]]
         env:
-          {{- with .Values.job.env }}
+          {{- with .Values.migrate.env }}
             {{- toYaml . | nindent 8 }}
           {{- end }}
-        resources:
-          {{- toYaml .Values.job.resources | nindent 10 }}
       restartPolicy: OnFailure
 {{- end }}
 
