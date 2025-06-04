@@ -12,11 +12,12 @@ spec:
       - name: init
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
-        command: ["/bin/sh", "-c", "npm run prisma:migrate && npm run prisma:seed"]]
-        env:
-          {{- with .Values.migrate.env }}
-            {{- toYaml . | nindent 8 }}
-          {{- end }}
+        command: ["/bin/sh", "-c", "npm run prisma:migrate && npm run prisma:seed"]
+        envFrom:
+          - secretRef:
+              name: {{ include "helm-crm.fullname" . }}
+          - configMapRef:
+              name: {{ include "helm-crm.fullname" . }}
       restartPolicy: OnFailure
 {{- end }}
 

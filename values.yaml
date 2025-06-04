@@ -133,5 +133,5 @@ affinity: {}
 secret: {}
 
 migrate:
-  env: {}
+  env: []
   enabled: false
