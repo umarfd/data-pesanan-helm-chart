@@ -135,3 +135,9 @@ secret: {}
 migrate:
   env: []
   enabled: false
+
+# WebWebJS Auth Storage Configuration
+wwebjs:
+  enabled: false
+  storage: 1Gi  # Storage size for .wwebjs_auth directory
+  storageClass: standard  # Kubernetes storage class to use
