@@ -2,7 +2,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: {{ include "helm-crm.fullname" . }}-init
+  name: migrate-job-{{ randAlphaNum 8 | lower }}
   labels:
     {{- include "helm-crm.labels" . | nindent 4 }}
 spec:
