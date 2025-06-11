@@ -18,7 +18,7 @@ spec:
       - name: init
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
-        command: ["/bin/sh", "-c", "npm run prisma:migrate && npm run prisma:seed"]
+        command: ["/bin/sh", "-c", "npm run prisma:migrate"]
         envFrom:
           - secretRef:
               name: {{ include "helm-crm.fullname" . }}
