@@ -4,5 +4,5 @@
 
 ```
 $ helm package .
-$ helm repo index . --url https://pinus-academy.github.io/helm-chart
+$ helm repo index . --url https://umarfd.github.io/data-pesanan-helm-chart
 ```

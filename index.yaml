@@ -9,6 +9,6 @@ entries:
     name: app
     type: application
     urls:
-    - https://pinus-academy.github.io/helm-chart/app-0.1.0.tgz
+    - https://umarfd.github.io/data-pesanan-helm-chart/app-0.1.0.tgz
     version: 0.1.0
 generated: "2025-06-12T09:40:50.208181+07:00"
