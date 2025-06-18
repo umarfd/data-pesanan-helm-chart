@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: {{ .Values.ingress.className | default "traefik" }}
   rules:
-    - host: {{ .Values.ingress.host | default "pinuspintar.id" }}
+    - host: {{ .Values.ingress.host | default "pesanan.uwuw.my.id" }}
       http:
         paths:
           - path: /
@@ -25,6 +25,6 @@ spec:
                   number: {{ .Values.service.port | default 8070 }}
   tls:
   - hosts:
-    - {{ .Values.ingress.host | default "pinuspintar.id" }}
-    secretName: {{ .Values.ingress.host | default "pinuspintar.id" }}-tls
+    - {{ .Values.ingress.host | default "pesanan.uwuw.my.id" }}
+    secretName: {{ .Values.ingress.host | default "pesanan.uwuw.my.id" }}-tls
 {{- end }}
