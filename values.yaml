@@ -72,7 +72,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: pinuspintar.id
+    - host: pesanan.uwuw.my.id
       paths:
         - path: /
           pathType: ImplementationSpecific
