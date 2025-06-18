@@ -3,12 +3,12 @@ entries:
   app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-06-18T11:31:42.136953704+07:00"
+    created: "2025-06-18T16:28:00.214085634+07:00"
     description: A Helm chart for Kubernetes
-    digest: 2314c85707cfae920fe69c9c09c1aba8afd6fb385fc2cfd51126d41c57ac3a3b
+    digest: c5d44fa0ec3eda0e768ee0fef6ffe9ff9de6c32e66d59daf6e47b2e2f40ffd39
     name: app
     type: application
     urls:
     - https://umarfd.github.io/data-pesanan-helm-chart/app-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-18T11:31:42.133393231+07:00"
+generated: "2025-06-18T16:28:00.20986053+07:00"

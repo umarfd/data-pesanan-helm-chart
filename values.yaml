@@ -134,7 +134,7 @@ secret: {}
 
 migrate:
   env: []
-  enabled: false
+  enabled: true
 
 # WebWebJS Auth Storage Configuration
 wwebjs:
