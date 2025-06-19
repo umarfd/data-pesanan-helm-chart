@@ -84,3 +84,8 @@ postgres:
   password: postgres
   db: data_pesanan
   port: 5432
+
+wwebjs:
+  enabled: false
+  storage: 1Gi
+  storageClass: standard
