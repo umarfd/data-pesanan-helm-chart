@@ -13,17 +13,29 @@ spec:
         {{- range . }}
         - name: "{{ . }}"
         {{- end }}
-      {{- end }} 
+      {{- end }}
       containers:
       - name: init
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         command: ["/bin/sh", "-c", "npm run prisma:migrate"]
+        {{- if or .Values.secret .Values.configMap.enabled }}
         envFrom:
+          {{- if .Values.secret }}
           - secretRef:
               name: {{ include "helm-crm.fullname" . }}
+          {{- end }}
+          {{- if .Values.configMap.enabled }}
           - configMapRef:
               name: {{ include "helm-crm.fullname" . }}
+          {{- end }}
+        {{- end }}
+        {{- if .Values.migrate.env }}
+        env:
+          {{- range .Values.migrate.env }}
+          - name: {{ .name }}
+            value: {{ .value | quote }}
+          {{- end }}
+        {{- end }}
       restartPolicy: OnFailure
 {{- end }}
-
